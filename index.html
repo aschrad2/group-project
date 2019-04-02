@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Transportation Survey</title>
+    <title>Pick a Park</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -34,6 +34,198 @@
      <span id="output">
        <p><b>These parks would be great options based on your criteria:</b></p>
      </span>
+
+     <div id="result">
+        <div class="container margin hide" id="fields">
+          <div class="row bg-info p-1">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">The Fields Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">4.7 / 5.0 Rating</h6>
+              <h6 class="distance">1.5 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info p-1">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Baseball Field</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="lovejoy">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Lovejoy Fountain Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">3.7 / 5.0 Rating</h6>
+              <h6 class="distance">3.5 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Baseball Field</li>
+                <li>Basketball Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="couch">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Couch Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">2.7 / 5.0 Rating</h6>
+              <h6 class="distance">4.5 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="elizabeth">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Elizabeth Caruthers Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">4.1 / 5 Rating</h6>
+              <h6 class="distance">5.4 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="sellwood">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Sellwood Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">4.8 / 5 Rating</h6>
+              <h6 class="distance">6.8 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Baseball Field</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="creston">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Creston Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">4.8 / 5 Rating</h6>
+              <h6 class="distance">9.3 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Baseball Field</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="clackamas">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">North Clackamas Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">3.8 / 5 Rating</h6>
+              <h6 class="distance">15.3 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Playground</li>
+                <li>Swing Set</li>
+                <li>Picnic Shelter</li>
+                <li>Baseball Field</li>
+                <li>Basketball Court</li>
+                <li>Tennis Court</li>
+                <li>Soccer Pitch</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+     </div>
    </div>
  </body>
 </html>

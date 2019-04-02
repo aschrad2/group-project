@@ -10,5 +10,25 @@ body {
 }
 
 .jumbo-bg {
-  background: #661108;
+  background-image: url("../img/swings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -400px;
+}
+
+h6.rating {
+  margin-bottom: .1rem;
+}
+
+.container.margin h2 {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.margin {
+  margin-bottom: 8px;
+}
+
+#fields, #lovejoy, #couch, #elizabeth, #sellwood, #creston, #clackamas {
+  display: none;
 }
