@@ -1,7 +1,37 @@
 body {
-  background: #636363; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #636363, #a2ab58); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #636363, #a2ab58); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #636363, #a2ab58); /* Chrome 10-25, Safari 5.1-6 */ */
+  /* background: linear-gradient(to right, #636363, #a2ab58); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+}
+
+html {
+  height: 100%;
+}
+
+.white-text {
+  color: white;
+  text-shadow: 0.75px 0.75px black;
+}
+
+.title-text {
+  color: #F9F871;
+  text-shadow: 0.75px 0.75px 5px black;
+}
+
+.jumbo-bg {
+  background-image: url("../img/swings.jpg");
+  /* background-repeat: no-repeat;*/
+  background-size: cover;
+  background-position: 0 -400px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 #home {
@@ -9,15 +39,9 @@ body {
   margin-right: 10vh;
 }
 
-.jumbo-bg {
-  background-image: url("../img/swings.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -400px;
-}
-
-h6.rating {
+h6, h6.rating, h6.distance {
   margin-bottom: .1rem;
+  color: white;
 }
 
 .container.margin h2 {
@@ -26,9 +50,35 @@ h6.rating {
 }
 
 .margin {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
-#fields, #lovejoy, #couch, #elizabeth, #sellwood, #creston, #clackamas {
+.hide {
+  box-shadow: 1px 1px 3px;
   display: none;
 }
+
+.shadow-upper {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.shadow-lower {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#output {
+  display: none;
+  color: white;
+  text-shadow: 0.75px 0.75px black;
+}
+
+li {
+  color: white;
+}
+
+
+/* #fields, #lovejoy, #couch, #elizabeth, #sellwood, #creston, #clackamas, #burnside, #pier {
+  display: none;
+} */

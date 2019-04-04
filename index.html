@@ -9,33 +9,67 @@
   </head>
   <body>
    <div class="container">
-     <div class="row jumbotron jumbo-bg">
+     <div class="row jumbo-bg jumbotron">
        <div class="col-md-6">
-         <h2>Park Selector</h2>
+         <a href="index.html" class="no-hyperlink-line"><h1 class="title-text">Park Selector</h1></a>
        </div>
-       <div class="col-md-6">
-         <a href="index.html"><h2 id="home">Home</h2></a>
-       </div>
+       <!-- <div class="col-md-6">
+         <h2 id="home">Home</h2></a>
+       </div> -->
      </div>
 
     <form id="park-form">
        <div class="form-group">
-         <p>Select desired park amenities:</p>
-         <input type="checkbox" name="park-item" value="playground">Playground Equipment<br>
-         <input type="checkbox" name="park-item" value="swing">Swing Set<br>
-         <input type="checkbox" name="park-item" value="picnic">Picnic Shelter<br>
-         <input type="checkbox" name="park-item" value="baseball">Baseball Field<br>
-         <input type="checkbox" name="park-item" value="basketball">Basketball Court<br>
-         <input type="checkbox" name="park-item" value="tennis">Tennis Court<br>
-         <input type="checkbox" name="park-item" value="soccer">Soccer Field<br>
+         <h3 class="white-text">Select desired park amenities:</h3>
+         <input type="checkbox" name="park-item" value="playground" id="box1"><span class="white-text">
+         <label for="box1">Playground Equipment</label><br></span>
+         <input type="checkbox" name="park-item" value="swing" id="box2"><span class="white-text">
+         <label for="box2">Swing Set</label><br></span>
+         <input type="checkbox" name="park-item" value="picnic" id="box3"><span class="white-text">
+         <label for="box3">Picnic Shelter</label><br></span>
+         <input type="checkbox" name="park-item" value="baseball" id="box4"><span class="white-text">
+         <label for="box4">Baseball Field</label><br></span>
+         <input type="checkbox" name="park-item" value="basketball" id="box5"><span class="white-text">
+         <label for="box5">Basketball Court</label><br></span>
+         <input type="checkbox" name="park-item" value="tennis" id="box6"><span class="white-text">
+         <label for="box6">Tennis Court</label><br></span>
+         <input type="checkbox" name="park-item" value="soccer" id="box7"><span class="white-text">
+         <label for="box7">Soccer Pitch</label><br></span>
+         <input type="checkbox" name="park-item" value="discgolf" id="box8"><span class="white-text">
+         <label for="box8">Disc Golf</label><br></span>
+         <input type="checkbox" name="park-item" value="skatepark" id="box9"><span class="white-text">
+         <label for="box9">Skate Park</label><br></span>
        </div>
-      <button type="submit">Show Parks</button>
+      <button class="btn btn-success" type="submit">Show Parks</button>
+      <button class="btn btn-secondary" id="reload">Reset Form</button>
      </form>
-     <span id="output">
-       <p><b>These parks would be great options based on your criteria:</b></p>
-     </span>
+     <div style="margin-bottom: 25px; margin-top: 25px;" id="output">
+       <h3><b>These parks would be great options based on your criteria:</b></h3>
+     </div>
 
      <div id="result">
+       <div class="container margin hide" id="burnside">
+         <div class="row bg-info p-1">
+           <div class="col-md-6 text-left shadow-upper">
+             <h2 class="park-name">Burnside Skate Park</h2>
+           </div>
+           <div class="col-md-6 text-right shadow-lower">
+             <h6 class="rating">5.0 / 5.0 Rating</h6>
+             <h6 class="distance">1.0 miles</h6>
+           </div>
+         </div>
+         <div class="row bg-info p-1">
+           <div class="col-md-6 text-left">
+             <ul class="amenities">
+               <li>Skate Park</li>
+             </ul>
+           </div>
+           <div class="col-md-6 text-right align-self-end margin">
+             <h6>Portland, OR</h6>
+           </div>
+         </div>
+       </div>
+
         <div class="container margin hide" id="fields">
           <div class="row bg-info p-1">
             <div class="col-md-6 text-left">
@@ -55,6 +89,29 @@
                 <li>Baseball Field</li>
                 <li>Basketball Court</li>
                 <li>Tennis Court</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-right align-self-end margin">
+              <h6>Portland, OR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hide margin" id="pier">
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <h2 class="park-name">Pier Park</h2>
+            </div>
+            <div class="col-md-6 text-right">
+              <h6 class="rating">4.2 / 5.0 Rating</h6>
+              <h6 class="distance">3.0 miles</h6>
+            </div>
+          </div>
+          <div class="row bg-info">
+            <div class="col-md-6 text-left">
+              <ul class="amenities">
+                <li>Skate Park</li>
+                <li>Disc Golf</li>
               </ul>
             </div>
             <div class="col-md-6 text-right align-self-end margin">
